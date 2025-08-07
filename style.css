@@ -1,0 +1,53 @@
+body {
+  background-color: #fff0f5;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+.card {
+  background-color: #ffe4e1;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  display: inline-block;
+  max-width: 600px;
+}
+
+h1 {
+  color: #e75480;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.cake {
+  font-size: 50px;
+  margin-bottom: 20px;
+}.balloon {
+  width: 40px;
+  height: 60px;
+  background-color: #ff69b4;
+  border-radius: 50% 50% 50% 50%;
+  position: absolute;
+  bottom: -100px;
+  animation: floatUp 6s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
+}
